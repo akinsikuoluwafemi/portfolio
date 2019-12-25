@@ -46,6 +46,35 @@ body {
     
 }
 
+@media (max-width:768px ) {
+  .wrapper{
+    grid-template-columns: 1fr;
+
+  }
+
+  .aboutme-image{
+    width: 80%;
+    margin: 0 auto;
+
+  }
+  .aboutme-text {
+      margin: 0 auto;
+  }
+
+
+
+
+
+}
+
+
+/* 
+  @media (max-width:768px ) {
+  
+
+
+}  */
+
 .aboutme {
     padding-top: 3rem;
     padding-left: 4rem;
@@ -73,30 +102,53 @@ body {
 
 }
 
+
+
+
+
 .aboutme-text-one {
-    
+    margin-bottom: 1.5rem;
 }
 
 .aboutme-text-two {
+    margin-bottom: 2rem;
+    
+}
+.aboutme-text-three {
+    margin-bottom: 2rem;
     
 }
 
 .aboutme-icons > * {
+   margin-right: 2rem;
+}
+
+.aboutme-iconss > * {
    margin-right: 1rem;
+  
 }
 
 .aboutme-icons {
+    margin-top: 4rem;
+}
+
+.aboutme-iconss > * {
+   margin-right: 1rem;
+}
+
+.aboutme-iconss {
     margin-top: 6rem;
 }
+
 .aboutme-image {
-    background-image: url('../images/Me.JPG');
+    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1577263691/Me_uzjros.jpg');
     height: 100vh;
     background-size: cover;
     background-position: top;
    
-
-    
 }
+
+
 
 /* after clicking on homepage */
 
@@ -238,11 +290,14 @@ cursor: pointer;
 .col1 {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-
 }
 
+
+
+
+
 .icons {
-    margin-top: 13rem;
+    margin-top: -11rem;
 }
 
 .icons > .cancel {
@@ -255,6 +310,53 @@ cursor: pointer;
 
 .col-content {
     margin-left: 29rem;
+}
+
+@media (max-width:1126px){
+    .col-content {
+    margin-left: 24rem;
+
+    }
+}
+
+@media (max-width:1024px){
+    .col-content {
+    margin-left: 20rem;
+
+    }
+}
+
+@media (max-width:843px){
+    .col-content {
+    margin-left: 14rem;
+
+    }
+}
+
+@media (max-width:658px){
+
+   .col-content {
+    margin-left: 10rem;
+
+}
+.col1 {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+}
+.down {
+    flex-wrap: wrap;
+}
+
+}
+
+@media (max-width: 331px){
+        .col-content {
+        margin-left: 1rem;
+
+    }
 }
 
 .list {
@@ -286,8 +388,9 @@ cursor: pointer;
 .list-link {
     margin-left: -8rem; 
     display: block;
-    font-size: 1.5rem;
-    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    /* font-family: var(--font-mono); */
+    font-family: 'Poppins', sans-serif;
     
     text-decoration: none;
     cursor: pointer;
@@ -312,6 +415,19 @@ cursor: pointer;
     padding-top: 3rem;
     width: 90%;
     margin-top: -2rem;
+
+}
+
+@media (max-width: 1024px){
+    .down {
+    padding-top: 1rem;
+
+    }
+
+        .list > *{
+        margin-bottom: 2rem;
+    }
+
 }
 
 .input:checked ~ .nav-background {
@@ -510,7 +626,7 @@ figure {
     /* object-fit: contain; */
     /* height: 50rem; */
     width: 100vw;
-    background-image: url('../images/Me2.JPG');
+    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1577263676/Me2_upvvn7.jpg');
     height: 70vh;
     background-size: cover;
     background-position: bottom;
@@ -589,7 +705,18 @@ figure {
     width: 30rem;
     height: 25rem;
     border-radius: .5rem;
+    object-fit: cover;
+    /* transition: all .5s ease-in; */
+    transition: .4s ease-in-out;
+    filter: grayscale(10);
 
+}
+.image-gallery:hover {
+    -webkit-transform: scale(1.02);
+	transform: scale(1.02);
+    -webkit-transition: .4s ease-in-out;
+    filter: grayscale(0);
+    
 }
 
 .gallery-background {
@@ -601,13 +728,26 @@ figure {
     font-size: 1.3rem;
     width: 25rem;
     margin: 0 auto;
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
     position: relative;
     z-index: 2;
     -webkit-box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 -moz-box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
+    transition: .4s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+
 }
+
+.image-gallery:hover + .gallery-background {
+    background: #ddd;
+
+}
+.image-gallery:hover + .gallery-background > .background-definition  {
+    color: #FA7E67;
+
+}
+
 
 .background-name {
     font-weight: bold;
@@ -625,11 +765,13 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 /* Community style */
 .community-section {
     font-family: 'Poppins', sans-serif;
-
+    padding: 2rem;
 }
 
 .community-gallery {
     display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .community-gallery-image {
@@ -639,7 +781,20 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 }
 
 .community-gallery-text {
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
 
+}
+
+.community-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.community-gallery-one {
+    padding: 0 2rem; 
 }
 
 
@@ -702,6 +857,10 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
     
 }
 
+.hides {
+
+}
+
 .hide-one {
     display: none;
 }
@@ -753,6 +912,8 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
     cursor: pointer;
     margin-left: 1.5rem;
 }
+
+
 .display-image:hover {
     transform: scale(1.3); 
     transition: all 2s ease-in-out;
@@ -786,3 +947,16 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
     }
 }
 
+
+
+/* writing */
+.writing {
+    margin-left: 4rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.display-images{
+    width: 70%;
+    margin-left: 1.5rem;
+}
