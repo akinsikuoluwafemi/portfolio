@@ -605,7 +605,7 @@ figure {
 
 .footer-library {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: .9rem;
     padding: 2rem;
     /* font-family: var(--font-mono); */
     /* font-family: lato; */
@@ -626,6 +626,7 @@ figure {
     display: flex;
     justify-content: flex-start;
     padding: 3rem;
+    align-items: flex-start;
  }
 
  .about-section-image {
@@ -634,10 +635,46 @@ figure {
     width: 100vw;
     background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1577263676/Me2_upvvn7.jpg');
     height: 70vh;
-    background-size: cover;
+    background-size: cover; 
     background-position: bottom;
     background-repeat: no-repeat;
-    object-fit: contain;
+    /* object-fit: contain; */
+ }
+
+ @media(max-width: 1085px){
+     .about-section-image {
+        height: 100vh;
+
+     }
+ }
+
+ @media(max-width: 1024px){
+     .about-section {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .about-section-image {
+        height: 90vh;
+        width: 60vw;
+        /* width: 90vw; */
+
+     }
+
+     @media(max-width: 800px){
+         .about-section-image{
+            height: 80vh;
+            width: 80vw;
+         }
+
+
+     }
+
+     .about-header {
+         margin: 0rem;
+     }
+
+
  }
 
  .about-content {
@@ -662,6 +699,25 @@ figure {
     /* font-weight: bold; */
     font-family: 'Anton', sans-serif;
     letter-spacing: .3rem;
+
+ }
+
+ @media(max-width: 426px){
+    .about-header {
+        font-size: 2rem;
+
+    }
+
+ }
+
+ @media(max-width:320px){
+    .about-header {
+    font-size: 1.5rem;
+    }
+
+    
+
+   
 
  }
 
@@ -703,9 +759,6 @@ figure {
 
     border-radius: .5rem;
 }
-.gallery-fig{
-
-}
 
 .image-gallery {
     width: 30rem;
@@ -717,9 +770,48 @@ figure {
     filter: grayscale(10);
 
 }
+
+@media(max-width: 426px){
+   
+
+    .image-gallery{
+        width: 17rem;
+        height: 19rem;
+        /* margin: 0 auto; */
+        margin-left: 6.5rem;
+
+    }
+    .background-name {
+        margin: 0;
+
+    }
+
+    .background-definition {
+        margin: 0;
+    }
+
+   
+
+
+}
+
+
+
+@media(max-width: 986px){
+ 
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
 .image-gallery:hover {
     -webkit-transform: scale(1.02);
-	transform: scale(1.02);
+    transform: scale(1.02);
+    transition: .4s ease-in-out;
     -webkit-transition: .4s ease-in-out;
     filter: grayscale(0);
     
@@ -744,6 +836,29 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
     font-family: 'Poppins', sans-serif;
 
 }
+
+
+
+@media(max-width: 792px){
+    .gallery-background {
+        width: 22rem;
+    }
+}
+
+ 
+
+@media(max-width: 426px){
+    .gallery-background {
+        width: 15rem;
+        margin-top: -2.5rem;
+
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
 
 .image-gallery:hover + .gallery-background {
     background: #ddd;
@@ -783,8 +898,51 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 .community-gallery-image {
     width: 30rem;
     height: 20rem;
+    border-radius: .6rem;
 
 }
+
+@media(max-width: 954px){
+        .community-gallery-image {
+        width: 26rem;
+        height: 20rem;
+
+    }
+
+}
+
+@media(max-width: 442px){
+        .community-gallery-image {
+        width: 20rem;
+        height: 18rem;
+
+    }
+
+    
+
+}
+
+@media(max-width: 331px){
+        .community-gallery-image {
+        width: 16rem;
+        height: 15rem;
+
+    }
+        .community-gallery-one {
+        /* padding: 0 0rem; */
+    }
+
+}
+
+@media(max-width: 820px){
+        .community-gallery {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+}
+
 
 .community-gallery-text {
     font-size: .9rem;
@@ -802,6 +960,28 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
 .community-gallery-one {
     padding: 0 2rem; 
 }
+
+@media(max-width: 425px){
+        .community-gallery-one {
+        padding: 0rem; 
+    }
+}
+
+@media(max-width: 331px){
+        .community-gallery-one {
+        padding: 0rem; 
+    }
+}
+
+@media(max-width: 253px){
+        .body {
+        overflow-x: scroll;
+    }
+}
+
+
+
+
 
 
 
