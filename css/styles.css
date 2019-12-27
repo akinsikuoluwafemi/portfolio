@@ -92,6 +92,23 @@ body {
     margin-top: 3rem;
 }
 
+
+@media(max-width:4266px){
+    .aboutme-header{
+        margin: 1rem;
+        margin-left: -1rem;
+        /* font-size: 2rem; */
+    }
+}
+
+@media(max-width:376px){
+    .aboutme-header{
+        margin: 1rem;
+        margin-left: -1rem;
+        /* font-size: 2rem; */
+    }
+}
+
 .aboutme-text {
     /* font-family: var(--font-mono); */
     font-family: 'Poppins', sans-serif;
@@ -107,6 +124,11 @@ body {
     .aboutme-text {
       margin: 0 auto;
       font-size: .8rem;
+  }
+  .aboutme-image{
+        height: 150px;
+        width: 50vw;
+
   }
 
 
@@ -132,6 +154,7 @@ body {
 @media(max-width:426px){
     .aboutme-text > p {
         margin-bottom: 1rem;
+        margin-left: -1.5rem;
     }
 }
 
@@ -308,7 +331,7 @@ cursor: pointer;
     border-radius: 50%;
     background: #fff;
     position: fixed;
-    left: 2.2rem;
+    left: 1.6rem;
     top: 3rem;
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.19, 1, 0.22, 1);
