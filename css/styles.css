@@ -161,7 +161,7 @@ body {
 }
 
 .aboutme-icons > * {
-   margin-right: .8rem;
+   margin-right: 1rem;
    /* background: red; */
 
 }
@@ -1651,4 +1651,8 @@ box-shadow: -1px 2px 12px -3px rgba(0,0,0,0.6);
         width: 50%;
         margin-left: 2rem;
     }
+}
+
+.downn {
+    margin-top: 8rem;
 }
