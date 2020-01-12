@@ -108,7 +108,17 @@ body {
     /* font-family: var(--font-mono); */
     font-family: 'Poppins', sans-serif;
 
-    margin-top: 3rem; 
+    margin-top: 6rem; 
+}
+
+@media(max-width:426px){
+    .aboutme-header{
+        margin: 1rem;
+        margin-left: -1rem;
+        /* font-size: 2rem; */
+        margin-top: 1.5rem; 
+
+    }
 }
 
 .aboutme-text {
@@ -184,7 +194,7 @@ body {
 }
 
 .aboutme-image {
-    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1577263691/Me_uzjros.jpg');
+    background-image: url('../images/Me.JPG');
     height: 100vh;
     background-size: cover;
     background-position: top;
@@ -858,7 +868,7 @@ figure {
     /* object-fit: contain; */
     /* height: 50rem; */
     width: 100vw;
-    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1577263676/Me2_upvvn7.jpg');
+    background-image: url('../images/Me2.JPG');
     height: 440px;
     background-size: cover; 
     background-position: bottom;
@@ -1046,7 +1056,7 @@ figure {
 
     grid-row-gap: 40px; 
     /* grid-column-gap: -3rem; */
-    grid-template-columns: repeat(auto-fit,minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
     /* justify-content: space-evenly; */
     justify-items: center;
     align-items: center;
