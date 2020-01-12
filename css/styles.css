@@ -34,6 +34,7 @@ body {
      -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    position: relative;
+   background: #f4f4f4;
    
 }
 
@@ -145,6 +146,7 @@ body {
 
 
 }
+
 
 
 
@@ -341,7 +343,7 @@ cursor: pointer;
     height: 2rem;
     width: 2rem;
     border-radius: 50%;
-    background: #fff;
+    background: #f4f4f4;
     position: fixed;
     left: 1.6rem;
     top: 3rem;
