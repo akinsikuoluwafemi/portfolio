@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="shortcut icon" type="image/png" href="../images/Group icon.png">
 
 </head>
@@ -43,7 +45,7 @@
             
         </div>
 
-        <div class="community-gallery">
+        <div class="community-gallery" >
             <div class="community-gallery-one">
                 <p  class="community-name">Facebook Developer Circle</p>
                 <p class="community-gallery-text">In 2019 I was an LCA (learning community ambassador) in the Facebook Developer circle training with Andela,
@@ -55,7 +57,7 @@
 
         </div>
 
-        <div class="community-gallery">
+        <div class="community-gallery" data-aos="fade-right">
             <img class="community-gallery-image" src="../images/gads.JPG" alt="Google africa developer circle image" />
             <div class="community-gallery-one">
                 <p class="community-name">Google Africa Developer Scholarship</p>
@@ -67,7 +69,7 @@
         </div>
 
 
-        <div class="community-gallery">
+        <div class="community-gallery" data-aos="fade-left">
             <div class="community-gallery-one">
                 <p class="community-name">Unstack</p>
                 <p class="community-gallery-text">unStack is a community of passionate developers, designers, and other technical talents. unStack is mostly focused on
@@ -86,10 +88,22 @@
 
     </section>
 
-    <div class="footer-library">
-        <p class="footer-copyright">Content &copy; 2019 Femi Akinsiku, unless otherwise specified</p>
+    <div class="footer-library" >
+        <p class="footer-copyright" >Content &copy; 2019 Femi Akinsiku, unless otherwise specified</p>
     </div>
 
+    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+            offset: 400,
+            duration: 1000
+        }
+        );
+    </script>
 
     
     
