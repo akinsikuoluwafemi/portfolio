@@ -665,7 +665,7 @@ color: #FA7E67;
 
 @media(max-width: 425px){
     .all-header-text {
-    font-size: .7rem;
+    font-size: .9rem;
 
     }
 
@@ -695,7 +695,7 @@ color: #FA7E67;
     }
 
         .library-text {
-        margin: 2rem 3rem;
+        margin: 1rem;
     }
 
 
